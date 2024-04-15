@@ -7,17 +7,20 @@ export default function Header() {
   const isMobile = getIsMobile();
   const path = usePathname();
 
-  if (isMobile && path !== "/") {
+  if (isMobile) {
     return (
-      <div className="nav sticky top-0 w-full bg-black z-20">
+      <div className="p-4 gap-8 flex items-center justify-center text-lg  sticky top-0 w-full bg-black z-20">
         <Link href="/">Home</Link>
       </div>
     );
   } else {
     return (
-      <div className="nav">
+      <div className="p-4 bg-sky-950 gap-8 flex items-center justify-center text-lg ">
         {routes.map((route) => (
-          <Link key={route} href={"/" + route.toLowerCase()}>
+          <Link
+            key={route}
+            href={route === "Home" ? "/" : `/${route.toLowerCase()}`}
+          >
             {route}
           </Link>
         ))}

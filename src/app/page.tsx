@@ -7,7 +7,7 @@ import getIsMobile from "@/utils/is-mobile";
 export default function Home() {
   const isMobile = getIsMobile();
   return (
-    <main className="flex justify-center h-screen">
+    <main className="flex justify-center h-screen ">
       <div className="h-screen flex flex-col justify-center gap-2">
         <div className="w-full flex justify-center align-middle font-normal text-4xl">
           Luke Anthony
@@ -27,7 +27,6 @@ export default function Home() {
             </Link>
           ))}
         </div>
-        <Fireflies />
       </div>
     </main>
   );
