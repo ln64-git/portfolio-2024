@@ -1,13 +1,13 @@
 "use client";
-import Fireflies from "@/components/fireflies";
 import routes from "../content/routes";
 import Link from "next/link";
 import getIsMobile from "@/utils/is-mobile";
+import Fireflies from "@/components/fireflies";
 
 export default function Home() {
   const isMobile = getIsMobile();
   return (
-    <main className="flex justify-center h-screen ">
+    <div className="flex justify-center h-screen ">
       <div className="h-screen flex flex-col justify-center gap-2">
         <div className="w-full flex justify-center align-middle font-normal text-4xl">
           Luke Anthony
@@ -28,6 +28,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-    </main>
+      <Fireflies />
+    </div>
   );
 }

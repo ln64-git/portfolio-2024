@@ -1,10 +1,8 @@
 // sass-lint:disable at-rule-no-unknown, css-ruleorselectorexpected
 @use 'sass:math';
-/* eslint-disable */
 
 $quantity: 35;
 
-html,
 body {
   height: 100%;
 }

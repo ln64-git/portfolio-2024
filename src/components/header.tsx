@@ -15,7 +15,7 @@ export default function Header() {
     );
   } else {
     return (
-      <div className="p-4 bg-sky-950 gap-8 flex items-center justify-center text-lg ">
+      <div className="p-4 gap-8 flex items-center justify-center text-lg ">
         {routes.map((route) => (
           <Link
             key={route}

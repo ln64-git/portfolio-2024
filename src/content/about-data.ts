@@ -1,6 +1,6 @@
 const aboutData = {
   name: 'Luke Anthony',
-  info: ['June 12th 1996', 'Mason, Ohio'],
+  info: ['June 12th 1996', 'Cincinnati, Ohio'],
   skills1: [
     'JavaScript',
     'React.js',
