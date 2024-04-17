@@ -10,7 +10,7 @@ export default function AboutPage() {
   const isMobile = getIsMobile();
 
   return (
-    <div id="About" className="mx-auto max-w-[650px] rounded-lg">
+    <div id="About" className="mx-auto max-w-[650px] ">
       <Header />
       <div className="max-w-[450px] mx-auto flex items-center justify-around">
         <div className="py-4 flex flex-col justify-center">
@@ -18,7 +18,7 @@ export default function AboutPage() {
           <div className="text-lg">
             <ul>
               {info.map((element, index) => (
-                <li key={index}>{element}</li>
+                <li key={index} className="text-sm">{element}</li>
               ))}
             </ul>
           </div>
@@ -36,8 +36,8 @@ export default function AboutPage() {
       <div
         className={`${
           isMobile
-            ? "max-w-[450px] my-4 mx-auto px-4"
-            : " max-w-[450px] my-4 mx-auto"
+            ? "max-w-[450px] my-4 text-sm mx-auto px-4"
+            : " max-w-[450px] my-4 text-sm mx-auto"
         }`}
       >
         {summary}
@@ -46,20 +46,20 @@ export default function AboutPage() {
         <div className="text-center flex max-w-[500px] mx-auto ">
           <div className=" py-4 ">
             <div className="flex ">
-              <div className=" p-2 w-1/3">Front-End</div>
+              <div className="p-1 text-sm w-1/3">Front-End</div>
               <ul className="flex flex-wrap w-2/3">
                 {skills1.map((skill, index) => (
-                  <li key={index} className="m-2">
+                  <li key={index} className="m-1 text-sm">
                     {skill}
                   </li>
                 ))}
               </ul>
             </div>
             <div className="flex ">
-              <div className=" p-2 w-1/3">Back-End</div>
+              <div className="p-1 text-sm w-1/3">Back-End</div>
               <ul className="flex flex-wrap w-2/3">
                 {skills2.map((skill, index) => (
-                  <li key={index} className="m-2">
+                  <li key={index} className="m-1 text-sm">
                     {skill}
                   </li>
                 ))}
