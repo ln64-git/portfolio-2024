@@ -10,10 +10,10 @@ export default function AboutPage() {
   const isMobile = getIsMobile();
 
   return (
-    <div id="About" className=" mx-auto  max-w-[650px]   rounded-lg">
+    <div id="About" className="mx-auto max-w-[650px] rounded-lg">
       <Header />
-      <div className=" max-w-[450px] mx-auto flex items-center justify-around   ">
-        <div className="py-4 flex flex-col justify-center ">
+      <div className="max-w-[450px] mx-auto flex items-center justify-around">
+        <div className="py-4 flex flex-col justify-center">
           <div className="text-2xl">{name}</div>
           <div className="text-lg">
             <ul>
@@ -36,7 +36,7 @@ export default function AboutPage() {
       <div
         className={`${
           isMobile
-            ? "max-w-[450px] my-4 mx-auto px-6"
+            ? "max-w-[450px] my-4 mx-auto px-4"
             : " max-w-[450px] my-4 mx-auto"
         }`}
       >
