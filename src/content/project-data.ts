@@ -6,9 +6,7 @@ const projectData = [
       'Modern and lightweight portfolio designed to demonstrate an adept understanding of modern CSS alongside contemporary JavaScript libraries such as Framer Motion and emailJS',
     image: 'portfolio',
     techArray: ['next', 'react'],
-    demoUrl: 'https://lucian.bio/',
     githubUrl: 'https://github.com/lucian1996/vite-react-portfolio',
-    textLeft: true
   },
   {
     name: 'Splitscreen Video',
@@ -19,7 +17,6 @@ const projectData = [
     techArray: ['next', 'react', 'zustand'],
     demoUrl: 'https://splitscreen-video.vercel.app/',
     githubUrl: 'https://github.com/lucian1996/splitscreen-video',
-    textLeft: true
   },
 
   {
@@ -31,7 +28,6 @@ const projectData = [
     techArray: ['next', 'react', 'prisma', 'redux'],
     demoUrl: 'https://computer-database-demo.vercel.app/',
     githubUrl: 'https://github.com/lucian1996/database-ui',
-    textLeft: false
   },
   {
     name: 'StockOverflow',
@@ -41,7 +37,6 @@ const projectData = [
     image: 'stockOverflow',
     techArray: ['vue', 'springboot', 'java'],
     githubUrl: 'https://github.com/lucian1996/stockOverflow',
-    textLeft: false
   }
 ];
 

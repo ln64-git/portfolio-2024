@@ -50,7 +50,7 @@ export default function Project(data: ProjectProps) {
           />
         </div>
       </div>
-      <div className="flex justify-center gap-16 pt-6 ">
+      <div className="flex justify-center gap-16 pt-4">
         <Link href={data.githubUrl} target="_blank" className="text-[#5c73c7]">
           Github
         </Link>
