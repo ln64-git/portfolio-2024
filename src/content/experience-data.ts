@@ -1,7 +1,7 @@
 const experienceData = [
   {
     company: 'CinDay Academy',
-    duration: 'February 2023 - Present 2023',
+    duration: 'February 2023 - September 2023',
     image: 'cinday',
     role: 'IT Assistant',
     summary: 'Collaborated with administration to strategize technology usage, optimize information systems, and enhance support for students and faculty. Responsibilities included IT infrastructure maintenance, hardware/software troubleshooting, and system-wide security oversight.',
