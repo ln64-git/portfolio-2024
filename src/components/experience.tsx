@@ -1,5 +1,5 @@
 "use client";
-import getIsMobile from "@/utils/is-mobile";
+import GetIsMobile from "@/utils/is-mobile";
 import Image from "next/image";
 
 interface JobProps {
@@ -15,7 +15,7 @@ export default function Experience(data: JobProps) {
   const durationParts = data.duration.split(" - ");
   const startDate = durationParts[0];
   const endDate = durationParts[1] === "Current" ? "Present" : durationParts[1];
-  const isMobile = getIsMobile();
+  const isMobile = GetIsMobile();
 
   const DurationFormat = () => {
     return (

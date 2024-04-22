@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function getIsMobile() {
+export default function GetIsMobile() {
   const [isMobile, setIsMobile] = useState(true);
   useEffect(() => {
     const handleResize = () => {

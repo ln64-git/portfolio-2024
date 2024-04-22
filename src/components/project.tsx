@@ -1,4 +1,4 @@
-import getIsMobile from "@/utils/is-mobile";
+import GetIsMobile from "@/utils/is-mobile";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -61,7 +61,9 @@ export default function Project(data: ProjectProps) {
           </div>
         )}
       </div>
-      <div className="mx-auto max-w-[500px] text-[#a9a0b4] p-4 text-sm">{data.summary}</div>
+      <div className="mx-auto max-w-[500px] p-4 text-sm text-[#a9a0b4]">
+        {data.summary}
+      </div>
     </div>
   );
 }

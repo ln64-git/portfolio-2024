@@ -2,7 +2,7 @@
 import aboutData from "@/content/about-data";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import getIsMobile from "@/utils/is-mobile";
+import GetIsMobile from "@/utils/is-mobile";
 import Header from "@/components/header";
 import Fireflies from "@/components/fireflies";
 import { motion } from "framer-motion";
@@ -31,7 +31,7 @@ export default function ContactPage() {
   };
 
   let iconSize = 50;
-  const isMobile = getIsMobile();
+  const isMobile = GetIsMobile();
   if (isMobile) {
     iconSize = 45;
   }
@@ -80,7 +80,7 @@ export default function ContactPage() {
           <input
             type="submit"
             value="Send"
-            className=" m-10 mx-auto w-2/5 text-[#676f98] cursor-pointer rounded-md p-4 hover:bg-[#0d0d0d]"
+            className=" m-10 mx-auto w-2/5 cursor-pointer rounded-md p-4 text-[#676f98] hover:bg-[#0d0d0d]"
             onClick={() => {
               console.log("clicked");
             }}

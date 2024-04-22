@@ -1,12 +1,12 @@
 "use client";
 import routes from "../content/routes";
 import Link from "next/link";
-import getIsMobile from "@/utils/is-mobile";
+import GetIsMobile from "@/utils/is-mobile";
 import Fireflies from "@/components/fireflies";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const isMobile = getIsMobile();
+  const isMobile = GetIsMobile();
   return (
     <div className="flex h-screen justify-center ">
       <motion.div
@@ -16,7 +16,7 @@ export default function Home() {
         transition={{ duration: 0.5 }}
       >
         <div className="flex h-screen flex-col justify-center gap-2">
-          <div className="flex text-purple-200 w-full justify-center align-middle text-4xl font-normal">
+          <div className="flex w-full justify-center align-middle text-4xl font-normal text-purple-200">
             Luke Anthony
           </div>
           <div
@@ -27,7 +27,7 @@ export default function Home() {
           >
             {routes.map((route) => (
               <Link
-              className="text-indigo-200"
+                className="text-indigo-200"
                 key={route}
                 href={route === "Home" ? "/" : `/${route.toLowerCase()}`}
               >
