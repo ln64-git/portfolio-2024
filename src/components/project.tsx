@@ -27,10 +27,10 @@ export default function Project(data: ProjectProps) {
       <div className="px-auto   mx-auto flex max-w-[500px] items-center justify-center  py-4 pr-10 align-middle">
         <div className="flex w-1/2 flex-col">
           <div className=" mx-4 flex max-w-[200px] flex-col pb-2  ">
-            <div className=" flex flex-col w-full justify-center text-center  ">
+            <div className="flex w-full flex-col justify-center text-center text-xl text-[#babed7] ">
               {data.name}
             </div>
-            <div className=" h-1/2  text-center text-sm font-light">
+            <div className=" h-1/2 text-center text-sm font-light text-[#a1a4b8]">
               {data.date}
             </div>
           </div>
@@ -47,31 +47,21 @@ export default function Project(data: ProjectProps) {
           />
         </div>
       </div>
-      <div className="mx-auto flex h-[35px] max-w-[500px] items-center justify-between  ">
+      <div className="mx-auto flex h-[35px] max-w-[300px] items-center justify-between  ">
         <div className="flex h-full w-full flex-col items-center justify-center ">
-          <Link
-            href={data.githubUrl}
-            target="_blank"
-            className=" text-[#5c73c7]"
-          >
+          <Link href={data.githubUrl} target="_blank">
             Github
           </Link>
         </div>
         {data.demoUrl && (
           <div className="flex h-full w-full flex-col items-center justify-center ">
-            <Link
-              href={data.demoUrl}
-              target="_blank"
-              className=" text-[#5c73c7]"
-            >
+            <Link href={data.demoUrl} target="_blank">
               Demo
             </Link>
           </div>
         )}
       </div>
-      <div className="mx-auto max-w-[500px]  p-4 text-sm">
-        {data.summary}
-      </div>
+      <div className="mx-auto max-w-[500px] text-[#a9a0b4] p-4 text-sm">{data.summary}</div>
     </div>
   );
 }

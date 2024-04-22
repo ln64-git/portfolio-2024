@@ -68,3 +68,11 @@ input:focus,
 textarea:focus {
   outline: none;
 }
+
+a {
+  color: rgb(133, 150, 212);
+}
+a:hover {
+  color: rgb(175, 188, 235);
+}
+
