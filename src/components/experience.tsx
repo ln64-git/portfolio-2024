@@ -33,7 +33,7 @@ export default function Experience(data: JobProps) {
 
   return (
     <div className="mx-auto  max-w-[450px] ">
-      <div className="flex h-[40px] items-center justify-center text-xl text-[#babed7]">
+      <div className="flex h-[40px] items-center justify-center text-xl text-[#e7e5f1]">
         {data.role}
       </div>
 
@@ -52,7 +52,7 @@ export default function Experience(data: JobProps) {
           {data.company}
         </div>
         <div className=" py-1 text-center text-sm">{DurationFormat()}</div>
-        <div className=" pt-1 text-sm text-[#b3abba]">{data.summary}</div>
+        <div className=" pt-1 text-sm text-[#e7e5f1]">{data.summary}</div>
         <ul>
           {data.bulletArray.map((bullet, index) => (
             <li

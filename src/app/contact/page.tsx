@@ -47,7 +47,7 @@ export default function ContactPage() {
       >
         <div className="mx-auto flex flex-col justify-center align-middle ">
           <div className="flex w-full flex-col items-center justify-center  space-y-2 p-4 align-middle">
-            <div className="text-3xl text-[#babed7]">{name}</div>
+            <div className="text-3xl text-[#e7e5f1]">{name}</div>
             <div className="text-xl text-[#a1a4b8]">{position}</div>
           </div>
           <div className="m-4 flex justify-center gap-4 ">

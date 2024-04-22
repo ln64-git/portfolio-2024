@@ -26,7 +26,7 @@ export default function Project(data: ProjectProps) {
       <div className="px-auto   mx-auto flex max-w-[500px] items-center justify-center  py-4 pr-10 align-middle">
         <div className="flex w-1/2 flex-col">
           <div className=" mx-4 flex max-w-[200px] flex-col pb-2  ">
-            <div className="flex w-full flex-col justify-center text-center text-xl text-[#babed7] ">
+            <div className="flex w-full flex-col justify-center text-center text-xl text-[#e7e5f1]">
               {data.name}
             </div>
             <div className=" h-1/2 text-center text-sm font-light text-[#a1a4b8]">
@@ -60,7 +60,7 @@ export default function Project(data: ProjectProps) {
           </div>
         )}
       </div>
-      <div className="mx-auto max-w-[500px] p-4 text-sm text-[#a9a0b4]">
+      <div className="mx-auto max-w-[500px] p-4 text-sm text-[#e7e5f1]">
         {data.summary}
       </div>
     </div>
