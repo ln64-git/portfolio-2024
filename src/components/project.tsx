@@ -1,4 +1,3 @@
-import GetIsMobile from "@/utils/is-mobile";
 import Image from "next/image";
 import Link from "next/link";
 

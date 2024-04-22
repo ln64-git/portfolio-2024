@@ -1,8 +1,7 @@
 "use client";
 import Link from "next/link";
 import routes from "../content/routes";
-import GetIsMobile from "../utils/is-mobile";
-import { usePathname } from "next/navigation";
+import GetIsMobile from "./is-mobile";
 export default function Header() {
   const isMobile = GetIsMobile();
 

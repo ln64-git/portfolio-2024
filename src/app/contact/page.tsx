@@ -2,10 +2,10 @@
 import aboutData from "@/content/about-data";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import GetIsMobile from "@/utils/is-mobile";
 import Header from "@/components/header";
 import Fireflies from "@/components/fireflies";
 import { motion } from "framer-motion";
+import GetIsMobile from "@/components/is-mobile";
 
 export default function ContactPage() {
   const form = useRef<HTMLFormElement | null>(null);

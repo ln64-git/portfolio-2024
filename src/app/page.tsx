@@ -1,9 +1,9 @@
 "use client";
 import routes from "../content/routes";
 import Link from "next/link";
-import GetIsMobile from "@/utils/is-mobile";
 import Fireflies from "@/components/fireflies";
 import { motion } from "framer-motion";
+import GetIsMobile from "@/components/is-mobile";
 
 export default function Home() {
   const isMobile = GetIsMobile();

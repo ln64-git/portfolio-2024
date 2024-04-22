@@ -1,5 +1,4 @@
 "use client";
-import GetIsMobile from "@/utils/is-mobile";
 import aboutData from "@/content/about-data";
 import Header from "@/components/header";
 import Image from "next/image";
@@ -8,7 +7,6 @@ import { motion } from "framer-motion";
 
 export default function AboutPage() {
   const { name, info, skills1, skills2, summary } = aboutData;
-  const isMobile = GetIsMobile();
 
   return (
     <div id="About" className="mx-auto max-w-[650px] px-4 ">

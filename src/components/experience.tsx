@@ -1,6 +1,6 @@
 "use client";
-import GetIsMobile from "@/utils/is-mobile";
 import Image from "next/image";
+import GetIsMobile from "./is-mobile";
 
 interface JobProps {
   company: string;
