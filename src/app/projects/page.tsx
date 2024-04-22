@@ -6,12 +6,14 @@ import Fireflies from "@/components/fireflies";
 
 export default function ProjectsPage() {
   return (
-    <div id="Projects" className="mx-auto max-w-[650px]">
+    <div className="mx-auto max-w-[650px] ">
       <Header />
-      {projectData.map((project, index) => (
-        <Project key={index} {...project} />
-      ))}
-      <Fireflies />
+      <div>
+        {projectData.map((project, index) => (
+          <Project key={index} {...project} />
+        ))}
+        <Fireflies />
+      </div>
     </div>
   );
 }

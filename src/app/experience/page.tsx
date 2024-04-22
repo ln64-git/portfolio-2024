@@ -14,7 +14,7 @@ interface ExperienceItem {
 
 export default function ExperiencePage() {
   return (
-    <div className="mx-auto max-w-[650px] ">
+    <div className="mx-auto max-w-[650px] px-4">
       <Header />
       {experienceData.map((experience: ExperienceItem, index: number) => (
         <Experience

@@ -1,5 +1,6 @@
 const aboutData = {
   name: 'Luke Anthony',
+  position: "Software Engineer",
   info: ['June 12th 1996', 'Cincinnati, Ohio'],
   skills1: [
     'JavaScript',

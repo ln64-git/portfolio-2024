@@ -10,10 +10,10 @@ export default function AboutPage() {
   const isMobile = getIsMobile();
 
   return (
-    <div id="About" className="mx-auto max-w-[650px] ">
+    <div id="About" className="mx-auto max-w-[650px] px-4 ">
       <Header />
-      <div className="max-w-[450px] mx-auto flex items-center justify-around">
-        <div className="py-4 flex flex-col justify-center">
+      <div className="mx-auto flex max-w-[450px] pt-4 pb-2 items-center justify-around">
+        <div className="flex flex-col justify-center ">
           <div className="text-2xl">{name}</div>
           <div className="text-lg">
             <ul>
@@ -25,7 +25,7 @@ export default function AboutPage() {
             </ul>
           </div>
         </div>
-        <div className="flex items-center justify-center min-w-[100px]">
+        <div className="flex min-w-[100px] items-center justify-center">
           <Image
             src="/lucian.jpg"
             alt="Lucian"
@@ -38,17 +38,17 @@ export default function AboutPage() {
       <div
         className={`${
           isMobile
-            ? "max-w-[450px] my-4 text-sm mx-auto px-10"
-            : " max-w-[450px]  my-4 text-sm mx-auto px-10"
+            ? "mx-auto my-4 max-w-[400px]  text-sm"
+            : " mx-auto  my-4 max-w-[400px]  text-sm"
         }`}
       >
         {summary}
       </div>
-      <div className="  text-center flex max-w-[500px] justify-center  mx-auto ">
-        <div className=" py-4 ">
+      <div className="  mx-auto flex max-w-[500px] justify-center  text-center ">
+        <div>
           <div className="flex max-w-[450px]  ">
-            <div className="p-1 text-sm w-1/3">Front-End</div>
-            <ul className="flex flex-wrap w-2/3">
+            <div className="w-1/3 p-1 text-sm">Front-End</div>
+            <ul className="flex w-2/3 flex-wrap">
               {skills1.map((skill, index) => (
                 <li key={index} className="m-1 text-sm">
                   {skill}
@@ -57,8 +57,8 @@ export default function AboutPage() {
             </ul>
           </div>
           <div className="flex max-w-[450px] ">
-            <div className="py-1 text-sm w-1/3">Back-End</div>
-            <ul className="flex flex-wrap w-2/3">
+            <div className="w-1/3 py-1 text-sm">Back-End</div>
+            <ul className="flex w-2/3 flex-wrap">
               {skills2.map((skill, index) => (
                 <li key={index} className="m-1 text-sm">
                   {skill}

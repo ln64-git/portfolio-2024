@@ -1,5 +1,6 @@
 "use client";
 import getIsMobile from "@/utils/is-mobile";
+import Image from "next/image";
 
 interface JobProps {
   company: string;
@@ -19,42 +20,38 @@ export default function Experience(data: JobProps) {
   const DurationFormat = () => {
     return (
       <div className="flex justify-center">
-        <div className="w-1/2 text-right mx-6">{startDate}</div>
+        <div className="mx-6 w-1/2 text-right">{startDate}</div>
         <div>-</div>
-        <div className="w-1/2 text-left mx-6">{endDate}</div>
+        <div className="mx-6 w-1/2 text-left">{endDate}</div>
       </div>
     );
   };
 
   return (
-    <div
-      className={`${
-        isMobile
-          ? "max-w-[450px] my-4 mx-auto px-6"
-          : " max-w-[450px] my-4 mx-auto"
-      }`}
-    >
-      <div className="header">
-        <div className="flex justify-center pb-3 text-xl font-medium">
-          {data.role}
-        </div>
-        <div className=" flex justify-around items-center overflow-x-hidden">
-          <div className=" w-1/2 flex justify-center">
-            <img
-              className="header-image"
-              src={`/${data.image}.png`}
-              alt={data.image}
-            />
-          </div>
+    <div className="mx-auto  max-w-[450px] ">
+      <div className="flex h-[40px] items-center justify-center  text-xl ">
+        {data.role}
+      </div>
+
+      <div className=" flex items-center justify-around overflow-x-hidden ">
+        <div className=" flex w-1/2 justify-center ">
+          <Image
+            width={300}
+            height={300}
+            src={`/${data.image}.png`}
+            alt={data.image}
+          />
         </div>
       </div>
-      <div className=" pt-4 pb-12">
-        <div className=" text-center text-xl font-medium">{data.company}</div>
-        <div className=" text-center text-sm py-2">{DurationFormat()}</div>
-        <div className="text-sm py-2">{data.summary}</div>
+      <div className="pb-10 pt-3">
+        <div className="mx-auto max-w-[300px] pb-1 text-center text-xl font-medium ">
+          {data.company}
+        </div>
+        <div className=" py-1 text-center text-sm">{DurationFormat()}</div>
+        <div className=" pt-1 text-sm">{data.summary}</div>
         <ul>
           {data.bulletArray.map((bullet, index) => (
-            <li className=" py-2 mx-8  list-disc text-sm" key={index}>
+            <li className=" mx-8 list-disc  pt-4 text-sm" key={index}>
               {bullet}
             </li>
           ))}

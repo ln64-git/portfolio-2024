@@ -10,57 +10,66 @@ interface ProjectProps {
   techArray: string[];
   demoUrl?: string;
   githubUrl: string;
-  textLeft: boolean;
 }
 
 export default function Project(data: ProjectProps) {
-  function TechIcons({ reverse }: { reverse?: boolean }) {
+  function TechIcons() {
     const techIconsArray = data.techArray.map((tech, index) => (
-      <img key={index} src={`/${tech}.svg`} alt={tech} className="w-10 p-1" />
+      <div key={index} className="flex h-8  w-8  ">
+        <Image src={`/${tech}.svg`} alt={tech} width={40} height={40} />
+      </div>
     ));
-    if (reverse) {
-      techIconsArray.reverse();
-    }
     return techIconsArray;
   }
 
   return (
-    <div className="  py-2">
-      <div className="  flex justify-center align-middle    max-w-[500px] mx-auto px-auto">
-        <div className=" w-72  flex flex-col justify-center">
-          <div className=" flex flex-col justify-center ">
-            <div className=" text-center flex flex-col justify-center text-2xl ">
+    <div className="   pb-8">
+      <div className="px-auto   mx-auto flex max-w-[500px] items-center justify-center  py-4 pr-10 align-middle">
+        <div className="flex w-1/2 flex-col">
+          <div className=" mx-4 flex max-w-[200px] flex-col pb-2  ">
+            <div className=" flex flex-col w-full justify-center text-center  ">
               {data.name}
             </div>
-            <div className="  text-center font-light text-sm h-1/2">
+            <div className=" h-1/2  text-center text-sm font-light">
               {data.date}
             </div>
           </div>
-          <div className=" flex justify-center">
+          <div className="mx-auto flex w-4/5  items-center justify-center gap-1  px-4 ">
             <TechIcons />
           </div>
         </div>
-        <div className="flex">
+        <div className=" aspect-video h-full justify-center   ">
           <Image
-            className="w-56"
             src={"/" + data.image + ".png"}
-            width={100}
+            width={200}
             height={200}
             alt={data.image}
           />
         </div>
       </div>
-      <div className="flex justify-center gap-16 pt-4">
-        <Link href={data.githubUrl} target="_blank" className="text-[#5c73c7]">
-          Github
-        </Link>
-        {data.demoUrl && (
-          <Link href={data.demoUrl} target="_blank" className="text-[#5c73c7]">
-            Demo
+      <div className="mx-auto flex h-[35px] max-w-[500px] items-center justify-between  ">
+        <div className="flex h-full w-full flex-col items-center justify-center ">
+          <Link
+            href={data.githubUrl}
+            target="_blank"
+            className=" text-[#5c73c7]"
+          >
+            Github
           </Link>
+        </div>
+        {data.demoUrl && (
+          <div className="flex h-full w-full flex-col items-center justify-center ">
+            <Link
+              href={data.demoUrl}
+              target="_blank"
+              className=" text-[#5c73c7]"
+            >
+              Demo
+            </Link>
+          </div>
         )}
       </div>
-      <div className="min-w-[300px] max-w-[500px] text-sm mx-auto p-4">
+      <div className="mx-auto max-w-[500px]  p-4 text-sm">
         {data.summary}
       </div>
     </div>
