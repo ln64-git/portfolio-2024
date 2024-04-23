@@ -51,10 +51,10 @@ export default function ContactPage() {
             <div className="text-xl text-[#a1a4b8]">{position}</div>
           </div>
           <div className="m-4 flex justify-center gap-4 ">
-            <a href="https://www.github.com/lucian1996" target="_blank">
+            <a href="https://www.github.com/ln64-git" target="_blank">
               <img src="/github.png" width={iconSize} alt="GitHub" />
             </a>
-            <a href="https://www.linkedin.com/in/lucian1996/" target="_blank">
+            <a href="https://www.linkedin.com/in/lukeanthony007/" target="_blank">
               <img src="/linkedin.png" width={iconSize} alt="LinkedIn" />
             </a>
             <a href="https://www.twitter.com/orpheustwin" target="_blank">

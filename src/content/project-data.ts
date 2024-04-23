@@ -6,7 +6,7 @@ const projectData = [
       'Modern and lightweight portfolio designed to demonstrate an adept understanding of modern CSS alongside contemporary JavaScript libraries such as Framer Motion and emailJS',
     image: 'portfolio',
     techArray: ['next', 'react'],
-    githubUrl: 'https://github.com/lucian1996/vite-react-portfolio',
+    githubUrl: 'https://github.com/ln64-git/vite-react-portfolio',
   },
   {
     name: 'Splitscreen Video',
@@ -16,7 +16,7 @@ const projectData = [
     image: 'splitscreen-video',
     techArray: ['next', 'react', 'zustand'],
     demoUrl: 'https://splitscreen-video.vercel.app/',
-    githubUrl: 'https://github.com/lucian1996/splitscreen-video',
+    githubUrl: 'https://github.com/ln64-git/splitscreen-video',
   },
 
   {
@@ -27,7 +27,7 @@ const projectData = [
     image: 'database',
     techArray: ['next', 'react', 'prisma', 'redux'],
     demoUrl: 'https://computer-database-demo.vercel.app/',
-    githubUrl: 'https://github.com/lucian1996/database-ui',
+    githubUrl: 'https://github.com/ln64-git/database-ui',
   },
   {
     name: 'StockOverflow',
@@ -36,7 +36,7 @@ const projectData = [
       'Full-stack Vue application that utilizes RESTful API calls to store entries inside of a PostgreSQL database. The application features user authentication and a reactive front-end interface that enables users to create, read, update, and delete shared grocery lists.',
     image: 'stockOverflow',
     techArray: ['vue', 'springboot', 'java'],
-    githubUrl: 'https://github.com/lucian1996/stockOverflow',
+    githubUrl: 'https://github.com/ln64-git/stockOverflow',
   }
 ];
 
