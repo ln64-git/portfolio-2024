@@ -10,7 +10,6 @@ export default function Home() {
 
   const handleButtonClick = (route: string) => {
     setNextPath(route === "Home" ? "/" : `/${route.toLowerCase()}`);
-    console.log(route);
   };
 
   return (
