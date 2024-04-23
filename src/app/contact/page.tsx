@@ -3,7 +3,6 @@ import aboutData from "@/content/about-data";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Header from "@/components/header";
-import Fireflies from "@/components/fireflies";
 import { motion } from "framer-motion";
 import GetIsMobile from "@/components/is-mobile";
 
@@ -39,12 +38,7 @@ export default function ContactPage() {
   return (
     <div className="mx-auto max-w-[650px] px-4 ">
       <Header />
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+
         <div className="mx-auto flex flex-col justify-center align-middle ">
           <div className="flex w-full flex-col items-center justify-center  space-y-2 p-4 align-middle">
             <div className="text-3xl text-[#e7e5f1]">{name}</div>
@@ -86,8 +80,6 @@ export default function ContactPage() {
             }}
           />
         </form>
-        <Fireflies />
-      </motion.div>
     </div>
   );
 }
