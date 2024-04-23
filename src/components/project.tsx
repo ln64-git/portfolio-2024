@@ -14,7 +14,10 @@ interface ProjectProps {
 export default function Project(data: ProjectProps) {
   function TechIcons() {
     const techIconsArray = data.techArray.map((tech, index) => (
-      <div key={index} className="flex h-8  w-8  ">
+      <div
+        key={index}
+        className="flex h-8 w-8 items-center justify-center align-middle  "
+      >
         <Image src={`/${tech}.svg`} alt={tech} width={40} height={40} />
       </div>
     ));
