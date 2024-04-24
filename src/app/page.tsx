@@ -1,8 +1,8 @@
 "use client";
 import routes from "../content/routes";
 import Link from "next/link";
-import GetIsMobile from "@/components/is-mobile";
 import pathStore from "@/utils/store";
+import GetIsMobile from "@/utils/is-mobile";
 
 export default function Home() {
   const isMobile = GetIsMobile();

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import GetIsMobile from "./is-mobile";
+import GetIsMobile from "../utils/is-mobile";
+import useWindowSize from "@/utils/window-size";
 
 interface JobProps {
   company: string;
@@ -23,8 +24,10 @@ export default function Experience(data: JobProps) {
   const endMonth = endDateParts[0];
   const endYear = endDateParts[1];
 
+  const windowSize = useWindowSize();
+
   const DurationFormat = () => {
-    if (window.innerWidth > 400) {
+    if (windowSize > 400) {
       return (
         <div className="flex justify-center">
           <div className="mx-6 w-1/2 text-right font-light text-[#adadad]">

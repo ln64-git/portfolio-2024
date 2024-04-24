@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import routes from "../content/routes";
-import GetIsMobile from "./is-mobile";
+import GetIsMobile from "../utils/is-mobile";
 import pathStore from "@/utils/store";
 import { usePathname } from "next/navigation";
 
