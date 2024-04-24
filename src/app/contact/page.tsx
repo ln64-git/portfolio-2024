@@ -1,28 +1,32 @@
 "use client";
 import aboutData from "@/content/about-data";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import GetIsMobile from "@/utils/is-mobile";
 
 export default function ContactPage() {
   const form = useRef<HTMLFormElement | null>(null);
   const { name, position } = aboutData;
+  const [emailStatus, setEmailStatus] = useState<"success" | "failure" | null>(
+    null,
+  );
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
     if (form.current) {
       emailjs
         .sendForm(
-          "service_1dv3bdm",
-          "template_y0bovyn",
+          "service_ut19eu5",
+          "template_k6z538t",
           form.current,
-          "4det7y_L2a0fApovP",
+          "k9dk_PHS4Rax1XBz_",
         )
-        .then((result) => {
-          console.log(result.text);
+        .then(() => {
+          setEmailStatus("success");
         })
         .catch((error) => {
           console.log(error.text);
+          setEmailStatus("failure");
         });
     }
   };
@@ -62,16 +66,24 @@ export default function ContactPage() {
         className="flex flex-col px-4 "
       >
         <label className="text-[#a1a4b8]">name</label>
-        <input type="text" name="user_name" />
+        <input type="text" name="user_name" className="text-[#a1a4b8]" />
         <label className="text-[#a1a4b8]">email</label>
-        <input type="email" name="user_email" />
+        <input type="email" name="user_email" className="text-[#a1a4b8]" />
         <label className="text-[#a1a4b8]">message</label>
-        <textarea name="message" />
+        <textarea name="message" className="text-[#a1a4b8]" />
         <input
           type="submit"
           value="Send"
           className=" m-10 mx-auto w-2/5 cursor-pointer rounded-md p-4 text-[#676f98] hover:bg-[#0d0d0d]"
         />
+        {emailStatus === "success" && (
+          <p className="text-center text-green-500">Email sent successfully!</p>
+        )}
+        {emailStatus === "failure" && (
+          <p className="text-center text-red-500">
+            Failed to send email. Please try again.
+          </p>
+        )}
       </form>
     </div>
   );
