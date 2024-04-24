@@ -8,10 +8,6 @@ export default function Home() {
   const isMobile = GetIsMobile();
   const setNextPath = pathStore((state) => state.setNextPath);
 
-  const handleButtonClick = (route: string) => {
-    setNextPath(route === "Home" ? "/" : `/${route.toLowerCase()}`);
-  };
-
   return (
     <div className="flex h-screen justify-center ">
       <div className="flex h-screen flex-col justify-center gap-2">
@@ -25,13 +21,13 @@ export default function Home() {
           }
         >
           {routes.map((route) => (
-            <button
+            <Link
               className="text-indigo-200"
               key={route}
-              onClick={() => handleButtonClick(route)}
+              href={route === "Home" ? "/" : `/${route.toLowerCase()}`}
             >
               {route}
-            </button>
+            </Link>
           ))}
         </div>
       </div>

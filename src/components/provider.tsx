@@ -12,24 +12,15 @@ export default function Provider({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const nextPath = pathStore((state) => state.nextPath);
-
+  const path = usePathname();
   return (
-    <AnimatePresence mode="wait" initial={false}>
-      <motion.div
-        key={nextPath}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        onAnimationEnd={() => {
-          router.push(nextPath);
-        }}
-      >
-        {children}
-        <Fireflies />
-      </motion.div>
-    </AnimatePresence>
+    <motion.div
+      key={path}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 0.75 }}
+    >
+      {children}
+    </motion.div>
   );
 }

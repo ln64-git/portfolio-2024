@@ -10,28 +10,30 @@ export default function Header() {
   if (isMobile) {
     return (
       <div className="sticky top-0 z-20 flex w-full items-center justify-center  gap-8 bg-black p-4 text-lg text-indigo-200">
-        <button
+        <Link
+          href={"/"}
           onClick={() => {
             setNextPath("/");
           }}
         >
           Home
-        </button>
+        </Link>
       </div>
     );
   } else {
     return (
       <div className="flex items-center justify-center gap-8 p-4 text-lg ">
         {routes.map((route) => (
-          <button
+          <Link
             className="text-indigo-200 "
             key={route}
-            onClick={() => {
-              setNextPath(route === "Home" ? "/" : `/${route.toLowerCase()}`);
-            }}
+            href={route === "Home" ? "/" : `/${route.toLowerCase()}`}
+            // onClick={() => {
+            //   setNextPath(route === "Home" ? "/" : `/${route.toLowerCase()}`);
+            // }}
           >
             {route}
-          </button>
+          </Link>
         ))}
       </div>
     );
