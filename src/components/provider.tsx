@@ -21,6 +21,7 @@ export default function Provider({
       transition={{ ease: "easeInOut", duration: 0.75 }}
     >
       {children}
+      <Fireflies />npm 
     </motion.div>
   );
 }
