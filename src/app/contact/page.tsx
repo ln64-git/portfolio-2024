@@ -36,7 +36,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="mx-auto max-w-[650px] px-4 ">
+    <div className="mx-auto max-w-[650px] px-4 pb-10 ">
       <Header />
 
         <div className="mx-auto flex flex-col justify-center align-middle ">

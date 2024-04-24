@@ -15,19 +15,19 @@ interface ExperienceItem {
 
 export default function ExperiencePage() {
   return (
-    <div className="mx-auto max-w-[650px] px-4">
+    <div className="mx-auto max-w-[650px] px-8 pb-10">
       <Header />
-        {experienceData.map((experience: ExperienceItem, index: number) => (
-          <Experience
-            key={index}
-            company={experience.company}
-            duration={experience.duration}
-            image={experience.image}
-            role={experience.role}
-            summary={experience.summary}
-            bulletArray={experience.bulletArray}
-          />
-        ))}
+      {experienceData.map((experience: ExperienceItem, index: number) => (
+        <Experience
+          key={index}
+          company={experience.company}
+          duration={experience.duration}
+          image={experience.image}
+          role={experience.role}
+          summary={experience.summary}
+          bulletArray={experience.bulletArray}
+        />
+      ))}
     </div>
   );
 }

@@ -14,25 +14,48 @@ interface JobProps {
 export default function Experience(data: JobProps) {
   const durationParts = data.duration.split(" - ");
   const startDate = durationParts[0];
+  const startDateParts = startDate.split(" ");
+  const startMonth = startDateParts[0];
+  const startYear = startDateParts[1];
+
   const endDate = durationParts[1] === "Current" ? "Present" : durationParts[1];
+  const endDateParts = endDate.split(" ");
+  const endMonth = endDateParts[0];
+  const endYear = endDateParts[1];
   const isMobile = GetIsMobile();
 
   const DurationFormat = () => {
-    return (
-      <div className="flex justify-center">
-        <div className="mx-6 w-1/2 text-right font-light text-[#adadad]">
-          {startDate}
+    if (window.innerWidth > 400) {
+      return (
+        <div className="flex justify-center">
+          <div className="mx-6 w-1/2 text-right font-light text-[#adadad]">
+            <div>{startDate}</div>
+          </div>
+          <div className="text-[#adadad]">-</div>
+          <div className="mx-6 w-1/2 text-left font-light text-[#adadad]">
+            <div>{endDate}</div>
+          </div>
         </div>
-        <div className="text-[#adadad] ">-</div>
-        <div className="mx-6 w-1/2 text-left font-light text-[#adadad]">
-          {endDate}
+      );
+    } else {
+      return (
+        <div className="flex justify-center">
+          <div className="mx-6 w-1/2 text-right font-light text-[#adadad]">
+            <div>{startMonth}</div>
+            <div>{startYear}</div>
+          </div>
+          <div className="text-[#adadad]">-</div>
+          <div className="mx-6 w-1/2 text-left font-light text-[#adadad]">
+            <div>{endMonth}</div>
+            <div>{endYear}</div>
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
   };
 
   return (
-    <div className="mx-auto  max-w-[450px] ">
+    <div className="mx-auto max-w-[450px] ">
       <div className="flex h-[40px] items-center justify-center text-xl text-[#e7e5f1]">
         {data.role}
       </div>
@@ -47,7 +70,7 @@ export default function Experience(data: JobProps) {
           />
         </div>
       </div>
-      <div className="pb-10 pt-3">
+      <div className="pb-3 pt-3">
         <div className="mx-auto max-w-[300px] pb-1 text-center text-xl font-medium text-[#babed7] ">
           {data.company}
         </div>
