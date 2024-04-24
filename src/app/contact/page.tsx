@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Header from "@/components/header";
 import { motion } from "framer-motion";
-import GetIsMobile from "@/components/is-mobile";
+import GetIsMobile from "@/utils/is-mobile";
 
 export default function ContactPage() {
   const form = useRef<HTMLFormElement | null>(null);

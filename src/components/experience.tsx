@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import GetIsMobile from "../utils/is-mobile";
 import useWindowSize from "@/utils/window-size";
 
 interface JobProps {
