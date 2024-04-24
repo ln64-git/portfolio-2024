@@ -29,7 +29,7 @@ const aboutData = {
     'Unix'
   ],
   summary:
-    'Innovative software developer with expertise in cybersecurity, frontend (JavaScript/React), and backend (Rust/Java) development. Adept at leveraging technology to overcome visual impairment, bringing a unique perspective and strong problem-solving skills to create accessible, secure, and efficient solutions.'
+    'Innovative software developer with expertise in cybersecurity, frontend, and backend development. Adept at leveraging technology to overcome visual impairment, bringing a unique perspective and strong problem-solving skills to create accessible, secure, and efficient solutions.'
 };
 
 export default aboutData;

@@ -2,8 +2,6 @@
 import aboutData from "@/content/about-data";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Header from "@/components/header";
-import { motion } from "framer-motion";
 import GetIsMobile from "@/utils/is-mobile";
 
 export default function ContactPage() {
@@ -73,9 +71,6 @@ export default function ContactPage() {
           type="submit"
           value="Send"
           className=" m-10 mx-auto w-2/5 cursor-pointer rounded-md p-4 text-[#676f98] hover:bg-[#0d0d0d]"
-          onClick={() => {
-            console.log("clicked");
-          }}
         />
       </form>
     </div>
