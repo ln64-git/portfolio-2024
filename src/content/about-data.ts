@@ -16,6 +16,7 @@ const aboutData = {
     'WordPress'
   ],
   skills2: [
+    'Rust',
     'Java',
     'Spring Boot',
     'PostgreSQL',
@@ -28,7 +29,7 @@ const aboutData = {
     'Unix'
   ],
   summary:
-    'Result-driven Web Developer with design experience and a strong command of HTML, CSS, and JavaScript. Proven ability to design visually appealing and optimized full-stack applications. Seeking experience in the field of commercial web development.'
+    'Innovative software developer with expertise in cybersecurity, frontend (JavaScript/React), and backend (Rust/Java) development. Adept at leveraging technology to overcome visual impairment, bringing a unique perspective and strong problem-solving skills to create accessible, secure, and efficient solutions.'
 };
 
 export default aboutData;

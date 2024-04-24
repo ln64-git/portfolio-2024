@@ -6,8 +6,6 @@ html {
   background-color: #000000;
 }
 
-
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
