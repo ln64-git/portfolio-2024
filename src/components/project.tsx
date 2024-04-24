@@ -25,22 +25,22 @@ export default function Project(data: ProjectProps) {
   }
 
   return (
-    <div className="   pb-2">
-      <div className="mx-auto flex max-w-[500px] items-center justify-center  py-4  align-middle">
-        <div className="flex w-1/2 flex-col">
-          <div className="  flex max-w-[200px] flex-col pb-2  ">
+    <div className="pb-2">
+      <div className="mx-auto flex max-w-[500px] items-center justify-center py-4 align-middle">
+        <div className="flex w-1/2 flex-col items-center ">
+          <div className="flex max-w-[200px] flex-col pb-2">
             <div className="flex w-full flex-col justify-center text-center text-xl text-[#e7e5f1]">
               {data.name}
             </div>
-            <div className=" h-1/2 text-center text-sm font-light text-[#a1a4b8]">
+            <div className="h-1/2 text-center text-sm font-light text-[#a1a4b8]">
               {data.date}
             </div>
           </div>
-          <div className="mx-auto flex w-4/5   items-center justify-center gap-1 ">
+          <div className="flex w-4/5 items-center justify-center gap-1">
             <TechIcons />
           </div>
         </div>
-        <div className=" aspect-video h-full justify-center  mx-4 ">
+        <div className="mx-4 aspect-video h-full justify-center">
           <Image
             src={"/" + data.image + ".png"}
             width={200}

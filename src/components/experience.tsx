@@ -22,7 +22,6 @@ export default function Experience(data: JobProps) {
   const endDateParts = endDate.split(" ");
   const endMonth = endDateParts[0];
   const endYear = endDateParts[1];
-  const isMobile = GetIsMobile();
 
   const DurationFormat = () => {
     if (window.innerWidth > 400) {
