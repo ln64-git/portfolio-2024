@@ -9,8 +9,9 @@ export default function Header() {
   const setNextPath = pathStore((state) => state.setNextPath);
   if (isMobile) {
     return (
-      <div className="sticky top-0 z-20 flex w-full items-center justify-center  gap-8 bg-black p-4 text-lg text-indigo-200">
+      <div className="sticky top-0 z-20 flex w-full items-center justify-center  gap-8 bg-black p-4 text-lg ">
         <Link
+          className="text-indigo-200"
           href={"/"}
           onClick={() => {
             setNextPath("/");
