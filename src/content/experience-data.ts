@@ -4,21 +4,22 @@ const experienceData = [
     duration: 'February 2023 - September 2023',
     image: 'cinday',
     role: 'IT Assistant',
-    summary: 'Collaborated with administration to strategize technology usage, optimize information systems, and enhance support for students and faculty. Responsibilities included IT infrastructure maintenance, hardware/software troubleshooting, and system-wide security oversight.',
+    summary: 'Collaborated with administration to enhance technology usage, optimize information systems, and provide exceptional support for students and faculty. Maintained IT infrastructure, addressed hardware/software concerns, and ensured system-wide security.',
     bulletArray: [
-      'Collaborating to maintain IT infrastructure while addressing hardware and software concerns and ensuring system wide security.',
-      'Conducting quality control testing and provided recommendations for enhancing IT-related processes and procedures.'
+      'Conducted thorough quality control testing and provided insightful recommendations for improving IT processes and procedures.',
+      'Demonstrated strong problem-solving skills by effectively addressing technical issues and implementing solutions to enhance the overall IT experience for users.'
     ],
   },
+  
   {
     company: 'Tech Elevator Remote Full Stack Bootcamp',
     duration: 'September 2022 - Devember 2022',
     image: 'tech-elevator',
     role: 'Student',
-    summary: "My experience at Tech Elevator's Full-Time Coding Bootcamp was both intense and rewarding, taking me from a novice programmer to a skilled web developer in just a few short months. Throughout the program, I became accustomed to paired programming, Agile methodology, and version source control strategies which prepared me well for an introduction to the tech industry.",
+    summary: "Successfully completed an intensive 14-week coding bootcamp, gaining proficiency in full-stack web development technologies through over 800 hours of hands-on experience. Adapted to paired programming, Agile methodology, and version source control strategies.",
     bulletArray: [
-      'Acquired proficiency in full-stack web development strategies and technologies including Java, HTML, CSS, modern JavaScript frameworks and SQL.',
-      'Successfully completed a rigorous 14-week coding bootcamp, accumulating over 800 hours of hands-on development education and practical experience.'
+      'Developed a strong foundation in Java, HTML, CSS, modern JavaScript frameworks, and SQL, showcasing the ability to learn and apply new technologies quickly.',
+      'Collaborated effectively with peers on various projects, demonstrating strong teamwork and communication skills.'
     ],
   },
   {
@@ -26,10 +27,10 @@ const experienceData = [
     duration: 'September 2019 - August 2020',
     image: 'citizens',
     role: 'Commissary Assistant',
-    summary: 'During my role at Citizens I worked closely with a small team to stock and maintain regular supply for five restaurant storefront locations. This position entailed daily execution of large-scale recipes and efficient management of invoices and orders across multiple locations.',
+    summary: 'Efficiently managed inventory, executed large-scale recipes, and ensured timely delivery across multiple restaurant locations. Demonstrated strong organizational skills and attention to detail in managing invoices and orders.',
     bulletArray: [
-      'Executed large scale recipe instructions for an extensive seasonal breakfast and lunch menu.',
-      'Daily meal prep delivery through Uber to update and organize five individual storefront inventories based in Manhattan.'
+      'Showcased excellent time management abilities by consistently meeting delivery deadlines and maintaining accurate inventory levels.',
+      'Adapted quickly to changing demands and prioritized tasks effectively to support the smooth operation of multiple restaurant storefronts.'
     ],
   },
   {
@@ -37,10 +38,10 @@ const experienceData = [
     duration: 'January 2017 - August 2019',
     image: 'habanero',
     role: 'Line Cook',
-    summary: 'While at Habanero, I consistently delivered excellent customer service, maintained a clean and efficient workstation, and ensuring a high-quality dining experience.',
+    summary: 'Consistently delivered exceptional customer service and maintained a clean and efficient workstation in a fast-paced culinary environment. Contributed to ensuring a high-quality dining experience for customers.',
     bulletArray: [
-      'Provided customer service on a team based culinary line.',
-      'Regularly maintained a clean and organized working environment.'
+      'Demonstrated strong attention to detail and quality control, ensuring that each dish met the highest standards of presentation and taste.',
+      'Worked collaboratively with team members to maintain a smooth and efficient workflow during peak hours.'
     ],
   },
   {
@@ -48,10 +49,10 @@ const experienceData = [
     duration: 'February 2016 - December 2016',
     image: 'kaze',
     role: 'Sushi Assistant',
-    summary: "During my role as a Sushi Assistant at Kaze in Over the Rhine, I focused on perfecting sushi presentation while also contributing to inventory and supply management. This allowed me to consistently deliver top-notch sushi dishes featuring seasonal ingredients.",
+    summary: "Honed sushi presentation skills while effectively managing inventory and supply based on seasonal availability. Consistently delivered top-quality sushi dishes, demonstrating a keen eye for detail and a commitment to excellence.",
     bulletArray: [
-      "Continually refined meal presentation according to customer's request.",
-      'Managed inventory and stock according to seasonal supply.'
+      "Quickly learned and applied advanced sushi preparation techniques, showcasing a strong ability to acquire new skills and adapt to different culinary styles.",
+      'Proactively communicated with team members to ensure optimal inventory levels and minimize waste.'
     ],
   },
   {
@@ -59,10 +60,10 @@ const experienceData = [
     duration: 'January 2013 - December 2015',
     image: 'rookwood',
     role: 'Inventory Manager',
-    summary: 'Began as an intern and progressed to managing an inventory of over 80,000 pre-fired art/pottery and installation ceramic products. Responsible for physically and digitally managing product exchange between departments and administration, serving various in-house and external clients, including projects like the Taft Ale House in Cincinnati and the restoration of the Chicago Monroe Building.',
+    summary: 'Starting as an intern and quickly progressing to the role of Inventory Manager, I independently oversaw a vast inventory of over 80,000 pre-fired art/pottery and installation ceramic products. Collaborating closely with managers, I optimized product exchange between departments, serving a diverse range of in-house and external clients, including notable projects such as the Taft Ale House and the restoration of the Chicago Monroe Building.',
     bulletArray: [
-      "Independently managed an Excel Inventory of 80,000+ individual, pre-fired art/pottery and installation tile.",
-      'Collaborated with other managers to optimize the exchange of ceramic product in relevance to production and commission.'
+      "Demonstrated exceptional organizational and analytical skills by accurately tracking and managing a complex inventory system.",
+      'Built strong relationships with clients and colleagues, facilitating smooth product exchanges and ensuring customer satisfaction.'
     ],
   },
 ];

@@ -1,7 +1,7 @@
 const aboutData = {
   name: 'Luke Anthony',
   position: "Software Developer",
-  info: ['June 12th 1996', 'Cincinnati, Ohio'],
+  info: ['June 13th 1996', 'Cincinnati, Ohio'],
   skills1: [
     'JavaScript',
     'React.js',
@@ -26,10 +26,11 @@ const aboutData = {
     'Unit Testing',
     'Integration Testing',
     'Git',
+    'Linux',
     'Unix'
   ],
   summary:
-    'Innovative software developer with expertise in cybersecurity, frontend, and backend development. Adept at leveraging technology to overcome visual impairment, bringing a unique perspective and strong problem-solving skills to create accessible, secure, and efficient solutions.'
+    'Innovative software developer with experience in cybersecurity, frontend, and backend development. Adept at leveraging technology to overcome visual impairment, bringing a unique perspective and strong problem-solving skills to create accessible, secure, and efficient solutions.'
 };
 
 export default aboutData;
