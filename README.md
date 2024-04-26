@@ -1,6 +1,6 @@
 # Portfolio 2024
 
-Welcome to my portfolio website for 2024! This modern and lightweight portfolio showcases my proficiency in advanced CSS techniques and seamless integration of JavaScript libraries, including Framer Motion and EmailJS. It effectively demonstrates my deep understanding of front-end development best practices and my ability to create visually appealing and interactive user experiences.
+Welcome to my updated portfolio website for 2024! This modern and lightweight website showcases my proficiency in advanced CSS techniques and seamless integration of JavaScript libraries, including Framer Motion and EmailJS. This project effectively demonstrates my understanding of front-end development best practices and my ability to create visually appealing and interactive user experiences.
 
 ## Live Website
 
