@@ -10,15 +10,9 @@ export default function AboutPage() {
   const { name, info, skills1, skills2, skills3, summary } = aboutData;
 
   const skillSets = [
-<<<<<<< HEAD
-    { name: "Cybersecurity", skills: skills1 },
-    { name: "Front-End", skills: skills2 },
-    { name: "Back-End", skills: skills3 },
-=======
     { name: "Front-End", skills: skills1 },
     { name: "Back-End", skills: skills2 },
     { name: "Cybersecurity", skills: skills3 },
->>>>>>> f748baabc020b05a567a732fb719195067d086b9
   ];
 
   return (
