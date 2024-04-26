@@ -16,7 +16,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div id="About" className="mx-auto max-w-[650px] px-8">
+    <div id="About" className="mx-auto max-w-[650px] px-8 pb-10">
       <div className="mx-auto flex max-w-[400px] items-center justify-around">
         <div className="mr-4 flex flex-col justify-center">
           <div className="bg-pruple-950 text-2xl text-[#e7e5f1]">{name}</div>
