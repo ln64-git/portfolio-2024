@@ -3,6 +3,14 @@ const aboutData = {
   position: "Software Developer",
   info: ['June 13th 1996', 'Cincinnati, Ohio'],
   skills1: [
+    'Network Security',
+    'Incident Response',
+    'Vulnerability Assessment',
+    'Threat Analysis',
+    'SIEM',
+    'Intrusion Detection Systems',
+    ],
+  skills2: [
     'JavaScript',
     'React.js',
     'Next.js',
@@ -15,7 +23,7 @@ const aboutData = {
     'Responsive Design',
     'WordPress'
   ],
-  skills2: [
+  skills3: [
     'Rust',
     'Java',
     'Spring Boot',
