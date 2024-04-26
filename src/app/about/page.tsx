@@ -10,9 +10,9 @@ export default function AboutPage() {
   const { name, info, skills1, skills2, skills3, summary } = aboutData;
 
   const skillSets = [
-    { name: "Cybersecurity", skills: skills1 },
-    { name: "Front-End", skills: skills2 },
-    { name: "Back-End", skills: skills3 },
+    { name: "Front-End", skills: skills1 },
+    { name: "Back-End", skills: skills2 },
+    { name: "Cybersecurity", skills: skills3 },
   ];
 
   return (
@@ -50,7 +50,7 @@ export default function AboutPage() {
                 {skillSet.skills.map((skill, skillIndex) => (
                   <li
                     key={skillIndex}
-                    className="mr-1 my-1 text-sm text-[#adadad]"
+                    className="my-1 mr-1 text-sm text-[#adadad]"
                   >
                     {skill + ", "}
                   </li>
