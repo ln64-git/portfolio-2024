@@ -1,8 +1,6 @@
 "use client";
-import Header from "@/components/header";
 import experienceData from "../../content/experience-data";
 import Experience from "@/components/experience";
-import { motion } from "framer-motion";
 
 interface ExperienceItem {
   company: string;

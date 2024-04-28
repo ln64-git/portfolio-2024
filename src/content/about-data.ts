@@ -8,6 +8,8 @@ const aboutData = {
     'React.js',
     'Next.js',
     'Vue.js',
+    'Node.js',
+    'Jest',
     'Redux',
     'Prisma',
     'HTML',
@@ -37,7 +39,7 @@ const aboutData = {
     'Threat Analysis',
     'SIEM',
     'Intrusion Detection Systems',
-    ],
+  ],
   summary:
     'Innovative software developer with experience in cybersecurity, frontend, and backend development. Adept at leveraging technology to overcome visual impairment, bringing a unique perspective and strong problem-solving skills to create accessible, secure, and efficient solutions.'
 };
